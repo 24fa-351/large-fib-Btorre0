@@ -28,11 +28,12 @@ unsigned long long int fibIter(int num)
    unsigned long long int a = 0;
    unsigned long long int b = 1;
    unsigned long long int c;
-
+   for (int ix = 2; ix <= num; ix++)
+   {
    c = a + b;
    a = b;
    b = c;
-
+   }
    return b;
 }
 
